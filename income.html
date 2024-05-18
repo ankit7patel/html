@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Tax Calculator</title>
+    <script>
+        function calculateIncomeTax(salary) {
+            let tax = 0;
+
+            if (salary < 4999) {
+                tax = 0;
+            } else if (salary < 9999) {
+                tax = salary * 0.05;
+            } else if (salary < 749999) {
+                tax = salary * 0.1;
+            } else {
+                tax = salary * 0.15;
+            }
+
+            return tax;
+        }
+
+        function calculateTax() {
+            const salaryInput = document.getElementById("salary");
+            const resultDisplay = document.getElementById("result");
+
+            const salary = parseFloat(salaryInput.value);
+
+            if (isNaN(salary)) {
+                resultDisplay.textContent = "Invalid input. Please enter a valid number.";
+            } else {
+                const tax = calculateIncomeTax(salary);
+                resultDisplay.textContent = "Income tax: " + tax;
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <label type="", id="Add" >Enter your Add:</label><hr> 
+    <input type="text" placeholder="enter your name"> 
+    <imput type="text", id="salary"> </imput>
+    <button onclick="calculateTax()"> Calculate Tax </button>
+    <p id="result"></p>
+</body>
+</html>

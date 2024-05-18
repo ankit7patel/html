@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #maindiv{
+            display: flex;
+            justify-content: center;
+        }
+
+        #maindiv div{
+            margin: 30px;
+            border: 2px solid black;
+            font-size: 20px;
+            padding: 30px;
+            width: 140px;
+        }
+        #day::after{
+            content: "days";
+        }
+        #hour::after{
+            content: "hours";
+        }
+        #minute::after{
+            content: "minutes";
+        }
+        #second::after{
+            content: "seconds";
+        }
+
+    </style>
+</head>
+<body onload="timer()" >
+      
+    <div id="maindiv">
+    <div id="day">0</div>
+    <div id="hour">0</div>
+    <div id="minute">0</div>
+    <div id="second">0</div>
+    
+</div>
+<script src="watch.js"> </script>
+</body>
+</html>
+
+ 

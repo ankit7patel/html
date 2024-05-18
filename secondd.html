@@ -1,0 +1,53 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body> 
+    <a href="#" onclick="return chngeimg();">
+        <img style="width: 100px;" id="myImage" src="14pro.jpg" />
+    
+        <button onclick="chngeimg()" id="myImage" > show Image </button> 
+    </a>
+
+    <hr>
+    <br><br>
+
+    <script> 
+        function chngeimg() {
+            var img = document.getElementById('myImage');
+            img.src = "15pro.jpg";
+            // return true; 
+        }
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   
+    <button onclick="changeImage()">Open Image</button>
+
+    <img id="myImage" style="display: none; width: 100px;" src="14pro.jpg" />
+  
+    <script> 
+
+        function changeImage() {
+            var img = document.getElementById('myImage');
+            img.src = "15pro.jpg";
+            img.style.display = "inline"; 
+        }
+    </script>
+</body>
+</html>
+

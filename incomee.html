@@ -1,0 +1,72 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Income Tax Calculator</title>
+ </head>
+ <body>
+ 
+ <div>
+   <h2>Income Tax Calculator</h2>
+   <label for="incomeAmount">Enter Income Amount:</label>
+   <input type="number" id="incomeAmount" required>
+   <button id="calculateButton">Calculate Tax</button>
+   <p id="taxResult"></p>
+ </div>
+ 
+ <script>
+   
+   function calculateTaxAmount(income, brackets) {
+     var tax = 0;
+     var remainingIncome = income;
+ 
+     for (var i = 0; i < brackets.length; i++) {
+       var bracket = brackets[i];
+       var taxableIncome = Math.min(remainingIncome, bracket.maxIncome - bracket.minIncome);
+ 
+       
+       if (taxableIncome > 0) {
+        
+         tax += taxableIncome * bracket.taxRate;
+         remainingIncome -= taxableIncome;
+       }
+ 
+    
+       if (remainingIncome <= 0) {
+         break;
+       }
+     }
+ 
+    
+     if (remainingIncome > 0) {
+       tax += remainingIncome * 0.4; 
+     }
+ 
+     return tax;
+   }
+ 
+  
+   function calculateTax() {
+     var incomeAmount = parseFloat(document.getElementById("incomeAmount").value);
+     var taxBrackets = [
+       { minIncome: 0, maxIncome: 10000, taxRate: 0 },
+       { minIncome: 10001, maxIncome: 50000, taxRate: 0.1 },
+       { minIncome: 50001, maxIncome: 100000, taxRate: 0.2 },
+       { minIncome: 100001, maxIncome: Infinity, taxRate: 0.3 }
+     ];
+     var tax = calculateTaxAmount(incomeAmount, taxBrackets);
+ 
+
+     document.getElementById("taxResult").textContent = "Tax Amount: $" + tax.toFixed(2);
+   }
+ 
+
+   document.getElementById("calculateButton").addEventListener("click", calculateTax);
+ </script>
+ 
+ </body>
+ </html>
+  
+  

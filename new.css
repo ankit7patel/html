@@ -1,0 +1,15 @@
+body{
+    margin: opx;
+    padding: 0px;
+    width: 100px;
+}
+#old{
+    justify-content: center;
+    display: flex;
+    color: blue;
+    font-size: 16px;
+    
+
+
+
+}

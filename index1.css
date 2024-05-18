@@ -1,0 +1,160 @@
+
+/*body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar {
+    display: flex;
+    margin: 20px;
+    list-style-type: none;
+    justify-content: center;
+    padding:15px;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    padding-top:10px ;
+    
+
+
+}
+
+ #navbar1{
+    
+    display: flex;
+    margin: 1px;
+    justify-content: center;
+    list-style-type: none;
+    padding:5px;
+    border-bottom: 1px solid blue;
+   
+   
+   
+}
+
+#navbar1 li a{
+    margin: 1px;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+#navbar li a {
+    margin: 20px;
+    text-decoration: none;
+
+    
+}
+#navbar li a label{
+   width: 300px;
+   margin-left: 50px;
+}
+
+#navbar li a label{
+    margin-right: 20px;
+    font-size: 20px;
+}*/
+
+
+body{
+    margin: 0;
+    margin:0;
+    overflow-x: hidden;
+}
+.nav{
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-left: 30px;
+    margin-right: 30px; */
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    border: solid 2px white;
+    color: white;
+}
+.nav div ul li{
+    
+    padding: 20px;
+}
+button{
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+
+}
+#checkbox:checked div a2 ul{
+    justify-content:space-around;
+    /*aline-item:center;*/
+    padding: 30px;
+}
+.a2{
+    display: flex;
+    justify-content: space-around;
+   
+}
+.a2 .in p{
+    margin-top: -5px;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.s{
+    display: flex;
+    justify-content:space-around;
+    border: solid 2px black;
+
+}
+.s:hover{
+    transition: all 0.3s;
+    padding: 10px;
+
+}
+.second{
+    display: flex;
+    justify-content: space-around;
+
+}
+h1{
+    display: flex;
+}
+ul li {
+    display: inline;
+    padding: 20px;
+    
+}
+.first h1{
+    display: flex;
+    justify-content: space-around;
+}
+.headpara div{
+    display: flex;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+}
+.center {
+    display: flex;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: space-between;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    border-top: solid 2px black;
+    background-color: black;
+    color: white;
+}
+footer div ul{
+    display: flex;
+    flex-direction: column;
+}
+.last h1{
+    display: flex;
+    justify-content: space-around;
+}

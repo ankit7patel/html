@@ -1,0 +1,165 @@
+
+#items2{
+    justify-content: center;
+    display: flex;   
+    width: 80%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    padding: 10px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+   
+   
+
+}
+
+
+#items2 #items2div2{
+    justify-content: center;
+    text-align: center;
+    width: 230px;
+    padding-bottom: 0px;
+    margin-bottom: px;
+    border: 2px solid black ;
+    border-radius: 25px;
+    box-shadow: 0 0 7px;
+    overflow: hidden;
+   
+   
+    
+}
+
+#items2 #items2div2 #image2{
+    width: 230px;
+    justify-content: center; 
+    
+} 
+
+#items2  #items2info2{
+    text-align: center;
+    width: 250px;
+    font-size: 30px;  
+   
+}
+
+#items2 #items2div2 #items2image2{
+    justify-content: center;
+    width: 200px;
+    text-align: center;  
+    
+    
+    overflow: hidden;
+
+}
+#items2 #item2sdiv2 #items2image22 img{
+    width: 160px;
+    transition: 2s;
+   
+}
+#items2 #items2div2 #items2image2 img:hover{
+    transform: scale(1.2);
+
+
+}
+
+
+ #btnn2 button{
+    width: 100%;
+    padding: 18px;
+    background-color:crimson;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border-color:gray ;
+    font-size: 20px;
+    border-radius: 2px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*//////////////////////////////////////////////*
+section id="items2"> 
+
+    <div id="items2div2"> 
+
+        <div id="items2image2"> 
+            <img src="13pro.jpg"> 
+        
+        </div>
+        <div id="items2info2"> 
+            <div> oneplus 9R 5G  <br> 
+             $ 43,879 </div> 
+
+        </div>   <br> <br> 
+        <div id="btnn2"> 
+            <button type="button"> Buy now </button>
+             
+        </div>
+        
+    </div>
+
+
+    <div id="items2div2"> 
+
+
+       <div id="items2image2"> 
+        <img src="14pro.jpg"> 
+    
+       </div>
+        <div id="items2info2"> 
+        <div >  oneplus 10R 5G  <br> 
+              $ 29,879 </div>
+
+       </div> <br> <br> 
+     <div id="btnn2"> 
+        <button type="button"> Buy now </button>
+         
+      </div>
+
+     </div>
+
+
+         <div id="items2div2"> 
+
+
+          <div id="items2image2"> 
+         <img src="15pro.jpg"> 
+     
+            </div>
+         <div id="items2info2"> 
+         <div > i phone 12  5G <br> 
+                $ 40,999 </div>
+
+         </div> 
+           <div id="btnn2">  <br> <br> 
+         <button type="button"> Buy now </button>
+          
+           </div>
+
+         </div>
+
+
+     
+
+
+
+
+
+
+</section>
+

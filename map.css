@@ -1,0 +1,22 @@
+#card{
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+   
+}
+@media(max-width:768px){
+    #card{
+    
+        display: grid;
+        grid-template-columns: auto auto;
+       
+    }
+
+}
+@media(max-width:320px){
+    #card{
+    
+        display: grid;
+        grid-template-columns: auto;
+    }
+}

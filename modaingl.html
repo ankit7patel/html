@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #modal{
+            border: 2px solid red;
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            top: 20px;
+            position: relative;
+            margin: 200px;
+            justify-content: center;
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+        <div id="modal"> </div>
+    <script>
+        setTimeout(run,1000);
+        function run(){
+            let a = <div id="show">
+             <button onclick="hide()">X</button>
+             </div>;
+                document.getElementById('show').innerHTML = a;
+
+        }
+        function hide(){
+            document.getElementById('hide');
+            a.innerHTML = "";
+        }
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #show::after{
+            content: "++";
+        }
+    </style>
+</head>
+<body >
+
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+
+    <div id="show"> </div>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+    <script>
+        
+  
+        let start = 0;
+        setInterval(run,100)
+        function run(){
+            if(start<=120){
+        let a = document.getElementById('show');
+        a.innerHTML = start;
+        start++
+        
+            }
+            else{
+                clearInterval();
+            }
+
+        }
+        
+  
+
+    </script>
+</body>
+</html>

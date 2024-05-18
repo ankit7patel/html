@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #typing::after{
+        content:" ";
+        }
+    </style>
+</head>
+<body onload="typingeffect()">
+
+    <div id="typing"> </div>
+    <script>
+        let store = '';
+        let chal = 0;
+        let str = 'we are developer';
+
+        function typingeffect(){
+            setInterval(run,100)
+            function run(){
+                if(str.length > chal){
+             store = store+str[chal];
+             document.getElementById('typing').innerHTML = store;
+             chal++;
+
+             }
+             else{
+                store = "";
+                chal = 0;
+             }
+            }
+            
+            
+
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,188 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  
+}
+
+
+#navbar  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     border-bottom: 1px solid black;
+    margin-top: 10px;
+    background-color:rgb(203, 173, 230);
+    
+    
+   
+}
+
+#navbar li a{
+    list-style-type: none;
+    margin: 10px;
+    text-decoration: none;
+    
+}
+#navbar li a img{
+    width: 60px;
+    margin-right:300px ;
+    border-radius: 40px ;
+    
+    
+   
+}
+
+#navbar input{
+    float: right;
+    margin: 4px;
+    padding: 5px;
+   /* border: none;*/
+   margin-left: 250px;
+   background-color:azure;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+
+
+}
+   /* ====end navbar===*/
+
+
+   /*===== start hero=====*/
+
+#hero{
+    justify-content: center;
+   
+   padding:200px;
+   width: 100%;
+   background-image: url('https://img.buzzfeed.com/buzzfeed-static/static/2018-04/13/12/asset/buzzfeed-prod-web-03/sub-buzz-8755-1523636113-1.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto');
+   color: mediumspringgreen ;
+
+    
+}
+#herodiv1{
+    
+    margin-left: 400px;
+    padding: 0px;
+   
+}
+ #hero1{
+    font-size: 44px;
+    
+    
+
+   
+    
+}
+#hero2{
+    font-size: 26px;
+    
+
+}
+
+#hero3 span {
+    
+    background-color:lightskyblue;
+    padding: 10px 20px 10px 20px;
+    border:red ;
+    color:rgb(232, 10, 10);
+    border-radius: 10px;
+    overflow: visible;
+   
+   
+   
+   
+   
+}
+
+ 
+/*======end hero===*/ 
+
+/*-------items----*/
+
+ #items{
+    justify-content: center;
+    display: flex;   
+    width: 80%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    padding: 10px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+   
+   
+
+}
+
+
+#items #itemsdiv1{
+    justify-content: center;
+    text-align: center;
+    width: 230px;
+    padding-bottom: 0px;
+    margin-bottom: px;
+    border: 2px solid black ;
+    border-radius: 25px;
+    box-shadow: 0 0 7px;
+    overflow: hidden;
+   
+   
+    
+}
+
+#items #itemsdiv1 #image{
+    width: 230px;
+    justify-content: center; 
+    
+} 
+
+#items  #itemsinfo{
+    text-align: center;
+    width: 250px;
+    font-size: 30px;  
+   
+}
+
+#items #itemsdiv1 #itemsimage{
+    justify-content: center;
+    width: 200px;
+    text-align: center;  
+    
+    
+    overflow: hidden;
+
+}
+#items #itemsdiv1 #itemsimage img{
+    width: 160px;
+    transition: 2s;
+   
+}
+#items #itemsdiv1 #itemsimage img:hover{
+    transform: scale(1.2);
+
+
+}
+
+
+ #btnn button{
+    width: 100%;
+    padding: 18px;
+    background-color:crimson;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border-color:gray ;
+    font-size: 20px;
+    border-radius: 2px;
+
+}
+
+
+
+
+
+    
+
+
